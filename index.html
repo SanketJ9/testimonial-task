@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./slick.css">
+    <script src="./slick.js"></script>
+    <title>Testimonials</title>
+</head>
+<body>
+    <div class="testimonials">
+        <div class="heading-cont">
+            <div class="head-block">
+                <h2>What User says</h2>
+            </div>
+            <div class="text-block">
+                <p>Testimonials that speak louder than words! Customer stories that light up our day.</p>
+            </div>
+        </div>
+
+        <div class="testimonials-cont">
+                <div class="card item">
+                    <div class="image-cont">
+                        <img src="./assets/1.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Jacob Jones</p>
+                    </div>
+                    <div class="text">
+                        <p>As a budding startup, we sought a financial solution that was simple, secure, and scalable. Swift Revel checked all the boxes, enabling focus on growth.</p>
+                    </div>
+                </div>
+                <div class="card item">
+                    <div class="image-cont">
+                        <img src="./assets/2.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Theresa Webb</p>
+                    </div>
+                    <div class="text">
+                        <p>Swift Revel empowers me to manage my business finances with confidence and ease. Their integrated tax solutions ensure I'm always tax compliant.</p>
+                    </div>
+                </div>
+                <div class="card item">
+                    <div class="image-cont">
+                        <img src="./assets/3.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Ronald Richards</p>
+                    </div>
+                    <div class="text">
+                        <p>We needed a payment gateway that could handle our diverse customer base. Swift Revel offers a wide range of payment options, making it easy for our clients to pay.</p>
+                    </div>
+                </div>
+                <div class="card item">
+                    <div class="image-cont">
+                        <img src="./assets/4.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Cody Fisher</p>
+                    </div>
+                    <div class="text">
+                        <p> As a Freelancer, managing invoices and chasing payments was a constant headache. Now, with automated and secure payment I am getting paid on time, every time.</p>
+                    </div>
+                </div>
+                <div class="card item">
+                    <div class="image-cont">
+                        <img src="./assets/5.png" alt="">
+                    </div>
+                    <div class="name">
+                        <p>Marvin McKinney</p>
+                    </div>
+                    <div class="text">
+                        <p>As a budding startup, we sought a financial solution that was simple, secure, and scalable. Swift Revel checked all the boxes, enabling focus on growth.  </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        
+        
+        
+        $('.testimonials-cont').slick({
+            centerMode: true,
+            centerPadding: "8%",
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            arrows : false,
+            speed: 6000,
+            autoplaySpeed: 2000,
+            customOnChange: function justChanged(){
+                console.log("changed");
+            },
+            responsive: [
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "19%",
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    centerPadding: "9%",
+                }
+            }
+            ]
+        });
+
+        
+        </script>
+        <script src="./script.js"></script>
+</body>
+</html>
